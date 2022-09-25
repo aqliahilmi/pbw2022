@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Belajar HTML 5 (multimedia)</title>
+	<head>
+	<body>
+	<button onclick="playVid()" type="button">play video</button>
+	<button onclick="pauseVid()" type="button">pause video</button>
+	<button onclick="durasiVid()" type="button">durasi video</button>
+		<h2>Video pada HTML 5</h2>
+		<p>NUR AQLIAH ILMI (A11.2022.14039) </p>
+		<video id="myVideo" width="320" height="240" controls>
+			<source src="movie.mp4" type="video/mp4">
+			</video>
+		<iframe width="560" height="315" src="movie.mp4" title="video.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encryted-media; gyroscope; picture-in-picture" allowfullscreen>test</iframe
+		
+		</body>
+		<script>
+		var vid = document.getElementById("myVideo");
+		
+		function durationvid () {
+			alert(vid.duration);
+		}
+		
+		function playvid() {
+			vid.play();
+		}
+		
+		function pausevid() {
+			vid.pause();
+		}
+		
+		function durasivid() {
+			vid.durasi();
+		}
