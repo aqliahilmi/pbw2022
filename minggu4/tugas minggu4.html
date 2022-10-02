@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form - HTML 5</title>
+	</head>
+	<body>
+		<h3>FORM MAHASISWA</h3>
+		<form id="form1" name="form1" method="post" action="kirim.php">
+		<table>
+			<tr>
+				<td>NIM</td>
+				<td><input type="number" name="fnim" required></td>
+			</tr>
+			<tr>
+				<td>NAMA</td>
+				<td><input type="text" name="fnama"></td>
+			</tr>
+			<tr>
+				<td>PROGRAM STUDY</td>
+				<td>
+					<select name="fprodi">
+						<option value="">Pilih Program Study</option>
+						<option value="A11">S1 - Teknik Informatika</option>
+						<option value="A12">S1 - Sistem Informasi</option>
+						<option value="A22">D3 - Teknik Informatika</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>TGL LAHIR</td>
+				<td><input type="date" name="ftgl_lhr"></td>
+			</tr>
+			<tr>
+				<td>BIDANG MINAT</td>
+				<td>
+					<input type="checkbox" name="hobby1" value="101">
+					<label for="hobby1">Volly Ball</label><br>
+					<input type="checkbox" name="hobby2" value="102">
+					<label for="hobby2">Basket Ball</label><br>
+					<input type="checkbox" name="hobby3" value="103">
+					<label for="hobby3">Batminton</label>
+				</td>
+			</tr>
+			<tr>
+				<td>LAM.SERTIFIKAT</td>
+				<td><input type="file" name="ffile"></td>
+			</tr>
+			<tr>
+				<td>NAMA ORANG TUA AYAH</td>
+				<td><input type="text" name="fnama"></td>
+			</tr>
+			<tr>
+				<td>NAMA ORANG TUA IBU</td>
+				<td><input type="text" name="fnama"></td>
+			</tr>
+			<tr>
+				<td>TELEPON ORANG TUA</td>
+				<td><input type="number" name="ftelepon orang tua" required></td>
+			</tr>
+			<tr>
+				<td>DESA</td>
+				<td>
+					<select name="fdesa">
+						<option value="">Pilih desa</option>
+						<option value="A1">MULYOHARJO</option>
+						<option value="A2">BANJARDAWA</option>
+						<option value="A3">ULUJAMI</option>
+						<option value="A4">SURAJAYA</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>KOTA</td>
+				<td>
+					<select name="fkota">
+						<option value="">Pilih kota</option>
+						<option value="A1">PEKALONGAN</option>
+						<option value="A2">PEMALANG</option>
+						<option value="A3">TEGAL</option>
+						<option value="A4">BREBES</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>PROVISI</td>
+				<td>
+					<select name="fprovinsi">
+						<option value="">Pilih provinsi</option>
+						<option value="A1">JAWA BARAT</option>
+						<option value="A2">JAWA TIMUR</option>
+						<option value="A3">JAWA TENGAH</option>
+						<option value="A4">KALIMANTAN</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input type="submit" name="fkirim" value="kirim"></td>
+			</tr>
+		</table>
+		</form>
+	</body>
+</html>
